@@ -44,7 +44,7 @@ int main(int argc, char* argv[])
 		// optionally, customize the list of xsl files and feed types 
 		// in this commented case we extend support for one nonstandard feed type.
 		// feedConfig.m_feed_types.clear();
-		// feedConfig.m_feed_types.push_back(std::make_pair("BroadCatching_02_xsl.txt", "BroadCatching02"));
+		// feedConfig.m_feed_types.push_back(std::make_pair("BroadCatching_02_xsl.xml", "BroadCatching02"));
 
 		// create feed reader instance
 		// it takes a URL of the feed we wish to fetch, 
