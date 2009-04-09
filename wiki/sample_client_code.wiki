@@ -50,7 +50,7 @@ int main(int argc, char* argv[])
 		feedReader.CheckFeed();
 
 		// get results
-		std::cout << "----------Feed---------" <<endl
+		std::cout << "----------Feed---------" << endl
 			<< "URL: '" << feedReader.GetUrl() << "'" << endl;
 		// print channel elements
 		for (FeedReader::Feed::feed_element_iterator fitr = feedReader.begin_feed_elements();
@@ -63,9 +63,9 @@ int main(int argc, char* argv[])
 		for (FeedReader::Feed::entry_iterator itr = feedReader.begin_entries();
 			itr != feedReader.end_entries(); itr++)
 		{
-			std::cout << "Item ID: '"	<< itr->UniqueId	<< "'" << std::endl
-				<< "IsLive: '"	<< itr->IsLive		<< "'" << std::endl;
-			itr->Print(std::cout);
+			std::cout << "Item ID: '"	<< itr->UniqueId	<< "'" << endl
+				<< "IsLive: '"	<< itr->IsLive		<< "'" << endl;
+			itr->Print(cout);
 		}
 	}
 	catch (exception& e)
